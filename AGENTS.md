@@ -40,10 +40,10 @@ python3 skills/ppt-master/scripts/project_manager.py validate <project_path>
 
 # Image tools
 python3 skills/ppt-master/scripts/analyze_images.py <project_path>/images
-python3 skills/ppt-master/scripts/optimize_images.py <project_path>/images  # optional: compress images before embedding
+python3 skills/ppt-master/scripts/source_to_md/pdf_to_md.py --help   # use --help on any script to see available options
 ```
 
 ## Personal Notes
 
-- I primarily use this for 16:9 presentations (`--format ppt169`); 4:3 format is rarely needed in my workflow
-- `web_to_md.py` with `curl_cffi` works well for most sources — install via `pip install curl_cffi`
+- I primarily use this for converting academic PDFs and internal reports into presentation slides.
+- Default format `ppt169` (16:9) works for most of my use cases; switch to `ppt43` only for legacy projectors.
