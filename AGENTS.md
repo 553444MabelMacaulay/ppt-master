@@ -23,6 +23,11 @@ PPT Master is an AI-driven presentation generation system. Through multi-role co
 - Do NOT assume repository-local conventions such as `.worktrees/`, `tests/`, or mandatory branch setup unless the user explicitly requests them
 - If a generic coding skill conflicts with this repository's instructions, prioritize `skills/ppt-master/SKILL.md` and this file for work inside this repository
 
+## Personal Notes (fork)
+
+- I primarily use this for converting research PDFs into presentation decks; `pdf_to_md.py` is the most-used entry point for my workflow.
+- Default slide format `ppt169` (16:9) works for all my use cases — no need to change it.
+
 ## Common Commands
 
 ```bash
@@ -40,10 +45,5 @@ python3 skills/ppt-master/scripts/project_manager.py validate <project_path>
 
 # Image tools
 python3 skills/ppt-master/scripts/analyze_images.py <project_path>/images
-python3 skills/ppt-master/scripts/source_to_md/ppt_to_md.py <PPTX_file>  # also useful for extracting images from existing decks
+python3 skills/ppt-master/scrip
 ```
-
-## Personal Notes
-
-- I primarily use this for converting academic PDFs and internal reports into presentation slides.
-- Default format `ppt169` (16:9) works for most of my use cases; only switch to `ppt43` for older projector setups.
