@@ -40,10 +40,10 @@ python3 skills/ppt-master/scripts/project_manager.py validate <project_path>
 
 # Image tools
 python3 skills/ppt-master/scripts/analyze_images.py <project_path>/images
-python3 skills/ppt-master/scripts/source_to_md/pdf_to_md.py --help   # use --help on any script to see available options
+python3 skills/ppt-master/scripts/source_to_md/ppt_to_md.py <PPTX_file>  # also useful for extracting images from existing decks
 ```
 
 ## Personal Notes
 
 - I primarily use this for converting academic PDFs and internal reports into presentation slides.
-- Default format `ppt169` (16:9) works for most of my use cases; switch to `ppt43` only for legacy projectors.
+- Default format `ppt169` (16:9) works for most of my use cases; only switch to `ppt43` for older projector setups.
