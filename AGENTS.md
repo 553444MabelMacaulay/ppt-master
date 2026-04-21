@@ -29,6 +29,7 @@ PPT Master is an AI-driven presentation generation system. Through multi-role co
 - Default slide format `ppt169` (16:9) works for all my use cases — no need to change it.
 - I typically target 12–18 slides per deck for research papers; anything beyond 20 slides tends to lose the audience.
 - Most of my PDFs are academic papers with figures — if image extraction looks off, check that `pymupdf` is installed and up to date.
+- For papers with dense math/equations, the extracted markdown can be noisy — manually clean up LaTeX blocks before feeding into the pipeline for best results.
 
 ## Common Commands
 
@@ -38,9 +39,5 @@ python3 skills/ppt-master/scripts/source_to_md/pdf_to_md.py <PDF_file>
 python3 skills/ppt-master/scripts/source_to_md/doc_to_md.py <DOCX_or_other_file>   # Native: .docx/.html/.epub/.ipynb; pandoc fallback: .doc/.odt/.rtf/.tex/.rst/.org/.typ
 python3 skills/ppt-master/scripts/source_to_md/ppt_to_md.py <PPTX_file>
 python3 skills/ppt-master/scripts/source_to_md/web_to_md.py <URL>    # auto-uses curl_cffi if installed (covers WeChat etc.)
-node skills/ppt-master/scripts/source_to_md/web_to_md.cjs <URL>       # fallback only; use if curl_cffi is unavailable
-
-# Project management
-python3 skills/ppt-master/scripts/project_manager.py init <project_name> --format ppt169
-python3 skills/ppt-master/scripts/project_manager.py impor
+node skills/ppt-master/scripts/sourc
 ```
