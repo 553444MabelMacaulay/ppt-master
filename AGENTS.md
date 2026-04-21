@@ -31,13 +31,12 @@ PPT Master is an AI-driven presentation generation system. Through multi-role co
 - Most of my PDFs are academic papers with figures — if image extraction looks off, check that `pymupdf` is installed and up to date.
 - For papers with dense math/equations, the extracted markdown can be noisy — manually clean up LaTeX blocks before feeding into the pipeline for best results.
 - When working with multi-column paper layouts (common in IEEE/ACM formats), `pdf_to_md.py` sometimes merges columns incorrectly — worth doing a quick sanity check on the extracted markdown before proceeding.
+- For conference papers (NeurIPS, ICML, ICLR), the abstract and conclusion sections are usually the most slide-worthy — prioritize those when trimming content to hit the 12–18 slide target.
 
 ## Common Commands
 
 ```bash
 # Source content conversion
 python3 skills/ppt-master/scripts/source_to_md/pdf_to_md.py <PDF_file>
-python3 skills/ppt-master/scripts/source_to_md/doc_to_md.py <DOCX_or_other_file>   # Native: .docx/.html/.epub/.ipynb; pandoc fallback: .doc/.odt/.rtf/.tex/.rst/.org/.typ
-python3 skills/ppt-master/scripts/source_to_md/ppt_to_md.py <PPTX_file>
-p
+python3 skills/ppt-master/scripts/s
 ```
