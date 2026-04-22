@@ -45,10 +45,12 @@ Copy `.env.example` to `.env` and fill in the required values:
 |---|---|---|
 | `OPENAI_API_KEY` | Your OpenAI (or compatible) API key | ✅ |
 | `OPENAI_BASE_URL` | Custom API base URL (for local models) | ❌ |
-| `MODEL_NAME` | LLM model to use (default: `gpt-4o`) | ❌ |
-| `MAX_SLIDES` | Maximum number of slides to generate | ❌ |
+| `MODEL_NAME` | LLM model to use (default: `gpt-4o-mini`) | ❌ |
+| `MAX_SLIDES` | Maximum number of slides to generate (default: `15`) | ❌ |
 
 See `.env.example` for the full list of options.
+
+> **Personal note:** I use `gpt-4o-mini` as the default model — it's significantly cheaper and fast enough for most presentations. Change `MODEL_NAME` in your `.env` if you need higher quality output.
 
 ## Usage
 
