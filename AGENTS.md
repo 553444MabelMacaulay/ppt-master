@@ -32,11 +32,5 @@ PPT Master is an AI-driven presentation generation system. Through multi-role co
 - For papers with dense math/equations, the extracted markdown can be noisy — manually clean up LaTeX blocks before feeding into the pipeline for best results.
 - When working with multi-column paper layouts (common in IEEE/ACM formats), `pdf_to_md.py` sometimes merges columns incorrectly — worth doing a quick sanity check on the extracted markdown before proceeding.
 - For conference papers (NeurIPS, ICML, ICLR), the abstract and conclusion sections are usually the most slide-worthy — prioritize those when trimming content to hit the 12–18 slide target.
-
-## Common Commands
-
-```bash
-# Source content conversion
-python3 skills/ppt-master/scripts/source_to_md/pdf_to_md.py <PDF_file>
-python3 skills/ppt-master/scripts/s
-```
+- For papers with a Related Work section, I usually condense it into a single slide (or skip it entirely for shorter talks) — it rarely needs more than a brief mention in a presentation context.
+- When the Strategist proposes a slide outline, I prefer a dedicated "Key Takeaways" slide as the second-to-last slide, right before any acknowledgements or references slide.
